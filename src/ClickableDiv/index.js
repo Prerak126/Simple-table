@@ -4,13 +4,10 @@ import React, { Component } from "react";
 class ClickableDiv extends Component {
 
     shouldComponentUpdate(nextProps) {
-        return nextProps.html !== this.getDOMNode().innerHTML;
     }
 
     componentDidUpdate() {
-        if (this.props.html !== this.getDOMNode().innerHTML) {
-            this.getDOMNode().innerHTML = this.props.html;
-        }
+        
     }
 
     emitChange(e) {

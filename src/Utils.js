@@ -13,7 +13,7 @@ const getAge = () => {
 
 
 export const makeData = () => {
-    return Array(100).fill(0).map((elem,i) => {
+    return Array(1200).fill(0).map((elem,i) => {
        return elem = {'id': i, 'firstName':getFirstName(), 'lastName': getLastName(), 'age':getAge()}
     })
 }
